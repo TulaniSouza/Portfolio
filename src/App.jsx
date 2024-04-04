@@ -1,6 +1,8 @@
 import React from 'react'
 import {createGlobalStyle} from "styled-components"
 import Navegacao from "./Navegacao/Navegacao.jsx"
+import Sidebar from './Sidebar/index.jsx'
+import SidebarItem from './SidebarItem/index.jsx'
 
 
 const GlobalStyle = createGlobalStyle`
@@ -17,6 +19,8 @@ function App() {
     <>
      <GlobalStyle/>
      <Navegacao/>
+     <Sidebar/>
+     <SidebarItem/>
     </>
   )
 }
