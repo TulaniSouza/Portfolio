@@ -1,10 +1,10 @@
 import React from "react"
 
-function About() {
+
+const About = () => {
     return(
         <>
         <h1>testando o about</h1>
-        <h2>teste</h2>
         </>
         
     )
