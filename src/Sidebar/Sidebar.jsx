@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {FaTh,FaBars,FaUserAlt,FaRegChartBar,}from "react-icons/fa";
+import {FaTh,FaBars,FaUserAlt,FaRegChartBar}from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import * as S from "../Sidebar/style.jsx"
 import Github from "../assets/github.png"
@@ -34,40 +34,26 @@ const Sidebar = ({children}) => {
                    <S.Block style={{marginLeft: isOpen ? "50px" : "0px"}}>
                        <FaBars onClick={toggle}/>
                    </S.Block>
-                    
                </S.Box>
-               
                
                <S.TwoBox>
                     {
                      menuItem.map((item, index)=>(
-                        <NavLink to={item.path} key={index} className="link" activeclassName="active">
+                        <NavLink to={item.path} key={index.name} className="link" activeclassName="active">
                             <div className="icon">{item.icon}</div>
                             <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
                         </NavLink>
                         ))
                     }
-                     <a
-              href="https://github.com/TulaniSouza"
-              target="_blank"
-              rel="noreferrer"
-            >
-                <S.Screen src={Github} alt="Github" title="Git conheca +"/>
-            </a>
+                     <a href="https://github.com/TulaniSouza" target="_blank" rel="noreferrer">
+                    <S.Screen src={Github} alt="Github" title="Git conheca +"/></a>
                     
-                    <a
-              href="https://api.whatsapp.com/send?phone=5521972975426&text=Seja%20bem%20vindo!%20Em%20que%20posso%20ajudar%3F"
-              target="_blank"
-              rel="noreferrer"
-            >
-                <S.Photo src={Whatsapp} alt="Whatsapp" title="Contato"/>
-            </a>
-                    
+                    <a href="https://api.whatsapp.com/send?phone=5521972975426&text=Seja%20bem%20vindo!%20Em%20que%20posso%20ajudar%3F"
+                    target="_blank" rel="noreferrer" > <S.Photo src={Whatsapp} alt="Whatsapp" title="Contato"/></a>
                </S.TwoBox>
            </S.Sessao>
-           <S.Divisao>{children}</S.Divisao>
+           {/* <S.Divisao>{children}</S.Divisao> */}
         </S.Container>
     );
 };
-
 export default Sidebar;

@@ -5,7 +5,6 @@ display:flex;
 align-items: center;
 
 `
-
 export const Image= styled.img`
 width: 30%;
 height: 55vh;
@@ -14,8 +13,6 @@ display: flex;
 align-items: center;
 margin-left:35%;
 border-radius: 50%;
-border: solid orange;
-
 
 `
 export const Haga2= styled.h2`
@@ -58,12 +55,4 @@ text-align: center;
 margin-left: 30%;
 width: 30%;
 position: absolute;
-
-`
-export const SkillsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 90px;
 `
