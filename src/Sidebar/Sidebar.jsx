@@ -1,59 +1,73 @@
-import React, { useState } from 'react';
-import {FaTh,FaBars,FaUserAlt,FaRegChartBar}from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
-import * as S from "../Sidebar/style.jsx"
-import Github from "../assets/github.png"
-import Whatsapp from "../assets/whatsapp.jpg"
+import React,{useState}  from "react"
+import * as S from "./style.jsx"
+import Logo from "../assets/Logotipo.png"
+import { Link} from 'react-router-dom';
 
-const Sidebar = ({children}) => {
-    const[isOpen ,setIsOpen] = useState(false);
-    const toggle = () => setIsOpen (!isOpen);
-    const menuItem=[
-        {
-            path:"/",
-            name:"Home",
-            icon:<FaTh/>
-        },
-        {
-            path:"/about",
-            name:"About",
-            icon:<FaUserAlt/>
-        },
-        {
-            path:"/projects",
-            name:"Projects",
-            icon:<FaRegChartBar/>
-        },
-        
-    ]
-    return (
-        <S.Container>
-           <S.Sessao style={{width: isOpen ? "200px" : "50px"}} >
-               <S.Box>
-                   <S.HagaOne style={{display: isOpen ? "block" : "none"}}>Tulani</S.HagaOne>
-                   <S.Block style={{marginLeft: isOpen ? "50px" : "0px"}}>
-                       <FaBars onClick={toggle}/>
-                   </S.Block>
-               </S.Box>
-               
-               <S.TwoBox>
-                    {
-                     menuItem.map((item, index)=>(
-                        <NavLink to={item.path} key={index.name} className="link" activeclassName="active">
-                            <div className="icon">{item.icon}</div>
-                            <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
-                        </NavLink>
-                        ))
-                    }
-                     <a href="https://github.com/TulaniSouza" target="_blank" rel="noreferrer">
-                    <S.Screen src={Github} alt="Github" title="Git conheca +"/></a>
-                    
-                    <a href="https://api.whatsapp.com/send?phone=5521972975426&text=Seja%20bem%20vindo!%20Em%20que%20posso%20ajudar%3F"
-                    target="_blank" rel="noreferrer" > <S.Photo src={Whatsapp} alt="Whatsapp" title="Contato"/></a>
-               </S.TwoBox>
-           </S.Sessao>
-           {/* <S.Divisao>{children}</S.Divisao> */}
-        </S.Container>
-    );
+
+
+const Sidebar= ()=> {
+    const [sidebarState, setSidebarState] = useState('closed');
+const openReducedSidebar = () => {
+setSidebarState('reduced');
 };
-export default Sidebar;
+const expandSidebar = () => {
+setSidebarState('expanded');
+   };
+const closeSidebar = () => {
+setSidebarState('closed');
+   };
+     return(
+    <S.Container >
+        <div>
+        {sidebarState === 'closed' && (
+           <button onClick={openReducedSidebar}>Abrir Sidebar
+           </button>      
+        )}      
+        {(sidebarState === 'reduced' || sidebarState === 'expanded') && (
+            <div className={`sidebar ${sidebarState}`}>
+                <button onClick={expandSidebar}>
+                    {sidebarState === 'reduced' ? 'Expandir' : 'Fechar'} Sidebar
+                </button>
+                {sidebarState === 'expanded' && (
+                <ul>
+                    <li><Link to="/" onClick={closeSidebar}><ion-icon name="home-outline"></ion-icon> Home</Link></li>
+                    <li><Link to="/about" onClick={closeSidebar}><ion-icon name="person-outline"></ion-icon> About</Link></li>
+                    <li><Link to="/projects" onClick={closeSidebar}><ion-icon name="git-network-outline"></ion-icon> Projects</Link></li>
+                </ul>
+                )}
+            </div>
+                )}
+        </div>
+            {/* Conteúdo do Sidebar */}
+            <ul>
+                <li className="logo"><Link><span>
+                    <img className="logo" src={Logo} alt="logo" title="logoTC"/>
+                    </span>
+                    </Link>
+                </li>
+                <li><Link className="father"><span className="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span className="titulo">Home</span>
+                    <Link to="/"></Link>
+                    </Link>
+                </li>
+                <li><Link className="father"><span className="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span className="titulo">About</span>
+                    <Link to="/About"></Link>
+                    </Link>
+                </li>
+                <li><Link className="father"><span className="icon">
+                    <ion-icon name="git-network-outline"></ion-icon>
+                    </span>
+                    <span className="titulo">Projects</span>   
+                    <Link to="/Projects"></Link></Link>
+                </li>
+            </ul>
+    </S.Container>
+);
+}
+
+export default Sidebar
