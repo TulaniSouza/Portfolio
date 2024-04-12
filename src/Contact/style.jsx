@@ -6,7 +6,9 @@ height: 40vh;
 width: 50vw;
 align-items: center;
 margin-left:30%;
-
+ box-shadow: 30px 30px rgba(139, 9, 9, 0.6);
+ -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.208);
+margin-top:2em;
 `
 export const Listagem=styled.ul`
 width: 80%; 
@@ -14,13 +16,13 @@ height: 90%;
 list-style: none;
 display: flex;
 justify-content: space-around;
-margin-left: auto;
+margin-left: 12%;
 
 li{
     width: 30%;
     height: 35%;
-    margin-top:20%;
-    
+    margin-top:15%; 
+
 }
 `
 

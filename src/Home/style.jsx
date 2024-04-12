@@ -58,7 +58,7 @@ export const IconContainer = styled.div`
   }
  
   &:hover {
-    border-color: var(--highlightColor);
+    border-color: let(--highlightColor);
     
     img {
       transform: scale(1.1);

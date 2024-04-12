@@ -8,7 +8,6 @@ transition: all;
 flex-wrap:wrap;
 justify-content: space-evenly;
 
-
 `
 export const Image= styled.img`
 object-fit: contain;
@@ -17,7 +16,7 @@ width: 45%;
 height: 45%;
 
 -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+   transition: transform .5s ease;
 
 &:hover{
   -webkit-transform: scale(1.2);
@@ -25,6 +24,7 @@ height: 45%;
 }
 
 `
+
 export const Imagem= styled.img`
 object-fit: contain;
 width: 45%;
@@ -69,6 +69,5 @@ margin-left:1%;
   -webkit-transform: scale(1.2);
    transform: scale(1.2);
 }
-
 
 `
