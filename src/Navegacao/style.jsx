@@ -41,20 +41,4 @@ li{
   color: #ff0077;
 }
 
-
 `
-
-// export const Screen= styled.img`
-// width: 7%;
-// height: 7%;
-// cursor:pointer;
-// border:solid;
-// display: flex;
-
-// `
-
-// export const Photo= styled.img`
-// width: 8%;
-// cursor: pointer;
-
-// `
