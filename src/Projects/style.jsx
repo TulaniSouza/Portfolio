@@ -1,37 +1,74 @@
 import styled from "styled-components";
 
-export const Carrossel=styled.section`
-box-shadow: 2px 2px 4px orange;
-overflow: hidden;
-
-`
-
-export const Box= styled. div`
+export const Container= styled. div`
+width: 98vw;
+height: 80vh;
 display:flex;
-
-`
-export const Imag=styled.img`
-object-fit: cover;
-height: 500px;
-width: 500px;
+transition: all;
+flex-wrap:wrap;
+justify-content: space-evenly;
 
 
 `
 export const Image= styled.img`
 object-fit: cover;
-height: 500px;
-width: 500px;
-`
+margin-left:1%;
+width: 45%;
+height: 45%;
 
+-webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+
+&:hover{
+  -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+`
 export const Imagem= styled.img`
 object-fit: cover;
-height: 500px;
-width: 500px;
+width: 45%;
+height: 45%;
+margin-left:1%;
+
+-webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+
+&:hover{
+  -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+}
 
 `
 
-export const FourImagem= styled.img`
+export const ThereeImagem= styled.img`
 object-fit: cover;
-height: 500px;
-width: 500px;
+margin-left:1%;
+width: 44%;
+height: 45%;
+-webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+
+&:hover{
+  -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+}
+  
+`
+
+export const FourImage= styled.img`
+object-fit: cover;
+width: 44%;
+height: 45%;
+margin-left:1%;
+
+-webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+
+&:hover{
+  -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+
 `

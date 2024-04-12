@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
   padding:0;
   box-sizing: border-box;
   text-decoration: none;
+  background-color: #e1e1e1f0;
 }
 `
 
@@ -18,6 +19,7 @@ function App() {
     <>
      <GlobalStyle/>
      <Navegacao/>
+
     </>
   )
 }

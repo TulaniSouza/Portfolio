@@ -1,28 +1,77 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Text= styled.section`
-display:flex;
-align-items: center;
-
+export const HomeSection = styled.section`
+  max-width: 1120px;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  padding: 25px;
+  
+  @media (min-width: 1200px) {
+    position: relative;
+    left: 50px;
+  }
 `
-export const Image= styled.img`
-width: 30%;
-height: 55vh;
-justify-content: space-evenly;
-display: flex;
-align-items: center;
-margin-left:35%;
-border-radius: 50%;
+export const Title = styled.h2`
+  position: relative;
+  font-size: 36px;
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 25px;
+    height: 4px;
+  }
+`
+
+export const HomeContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 90px;
+`
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border: solid 1px ${({ theme }) => theme.tertiaryBgColor};
+  border-radius: 15px;
+  transition: all 0.3s ease;
+
+  img {
+    width: 50%;
+    transition: all 0.3s ease;
+  }
+ 
+  &:hover {
+    border-color: var(--highlightColor);
+    
+    img {
+      transform: scale(1.1);
+    }
+  }
 `
 export const Haga2= styled.h2`
-font-size: 30px;
+font-size: 50px;
 white-space: nowrap;
 overflow: hidden;
-animation: typewriter 2s steps(13) infinite alternate,
-blink 800ms steps(13) infinite normal;
+animation: typewriter 2s steps(15) infinite alternate,
+blink 500ms steps(13) infinite normal;
 border-right: 5px solid black;
-margin-top: 30%;
 margin-left: 35%;
 position: absolute;
 @keyframes typewriter {
@@ -30,7 +79,7 @@ from {
        width: 0%;
         }
         to {
-          width: 15%;
+          width: 7em;
         }
       }
       @keyframes blink {
@@ -40,19 +89,10 @@ from {
         }
         to {
           border-color: transparent;
-          height: 5%;
+          height: 10%;
 
         }
         
       }
-
-`
-export const Paragrafo= styled.p`
-font-size: 25px;
-color: #5f2a7dda;
-margin-top: 43rem;
-text-align: center;
-margin-left: 30%;
-width: 30%;
-position: absolute;
+   
 `
