@@ -11,7 +11,7 @@ const About = () => {
             resolver problemas e pensar em diversas alternativas,
             constantemente em busca de novos conhecimentos.
             Formanda em Gestão de Tecnologia da Informação (UNESA-RJ), 
-            amante, da área que me acolheu e, de boas músicas.
+            amante da área que me acolheu e, de boas músicas.
         </S.Paragrafo>
         
     </S.Text>

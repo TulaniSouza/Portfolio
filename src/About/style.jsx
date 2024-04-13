@@ -8,8 +8,8 @@ margin-top: 5%;
 
 `
 export const Image= styled.img`
-width: 15%;
-height: 35vh;
+width: 10em;
+height: 15em;
 border-radius: 50%;
 margin-left: 20%;
 `

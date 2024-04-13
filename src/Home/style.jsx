@@ -11,27 +11,6 @@ export const HomeSection = styled.section`
     left: 50px;
   }
 `
-export const Title = styled.h2`
-  position: relative;
-  font-size: 36px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 50px;
-    height: 4px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 25px;
-    height: 4px;
-  }
-`
 
 export const HomeContainer = styled.div`
   display: flex;
