@@ -29,16 +29,13 @@ export const IconContainer = styled.div`
   height: 150px;
   border: solid 1px ${({ theme }) => theme.tertiaryBgColor};
   border-radius: 15px;
-  transition: all 0.3s ease;
 
   img {
     width: 50%;
     transition: all 0.3s ease;
   }
  
-  &:hover {
-    border-color: let(--highlightColor);
-    
+  &:hover {    
     img {
       transform: scale(1.1);
     }
@@ -56,7 +53,7 @@ position: absolute;
 @keyframes typewriter {
 from {
        width: 0%;
-        }
+      }
         to {
           width: 7em;
         }

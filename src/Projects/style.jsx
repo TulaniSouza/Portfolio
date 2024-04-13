@@ -12,7 +12,6 @@ justify-content: space-evenly;
 export const Image= styled.img`
 object-fit: contain;
 margin-left:1%;
-width: 45%;
 height: 45%;
 
 -webkit-transition: -webkit-transform .5s ease;
@@ -27,7 +26,6 @@ height: 45%;
 
 export const Imagem= styled.img`
 object-fit: contain;
-width: 45%;
 height: 45%;
 margin-left:1%;
 
@@ -44,7 +42,6 @@ margin-left:1%;
 export const ThereeImagem= styled.img`
 object-fit: contain;
 margin-left:1%;
-width: 44%;
 height: 45%;
 -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
@@ -53,12 +50,10 @@ height: 45%;
   -webkit-transform: scale(1.2);
    transform: scale(1.2);
 }
-  
 `
 
 export const FourImage= styled.img`
 object-fit: contain;
-width: 44%;
 height: 45%;
 margin-left:1%;
 

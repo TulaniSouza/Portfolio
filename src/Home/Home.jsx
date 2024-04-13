@@ -45,9 +45,9 @@ export default function Home() {
       image: windows
     },
     {
-        name: 'git',
-        image: git
-      }
+      name: 'git',
+      image: git
+    }
   ]
 
   useEffect(() => {
