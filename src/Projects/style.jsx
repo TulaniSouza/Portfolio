@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const Container= styled. div`
-width: 98vw;
+width: 90vw;
 height: 80vh;
 display:flex;
-transition: all;
 flex-wrap:wrap;
 justify-content: space-evenly;
+margin-left:5%;
+
 
 `
 export const Image= styled.img`
 object-fit: contain;
-margin-left:1%;
 height: 45%;
+margin-top:5px;
+gap: 3px;
 
 -webkit-transition: -webkit-transform .5s ease;
    transition: transform .5s ease;
@@ -27,7 +29,8 @@ height: 45%;
 export const Imagem= styled.img`
 object-fit: contain;
 height: 45%;
-margin-left:1%;
+margin-top:5px;
+gap: 3px;
 
 -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
@@ -41,8 +44,10 @@ margin-left:1%;
 
 export const ThereeImagem= styled.img`
 object-fit: contain;
-margin-left:1%;
 height: 45%;
+margin-top:1px;
+gap: 3px;
+
 -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 
@@ -55,7 +60,8 @@ height: 45%;
 export const FourImage= styled.img`
 object-fit: contain;
 height: 45%;
-margin-left:1%;
+margin-top:1px;
+gap: 3px;
 
 -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;

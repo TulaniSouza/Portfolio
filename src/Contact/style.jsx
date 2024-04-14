@@ -9,6 +9,11 @@ margin-left:30%;
  box-shadow: 30px 30px rgba(139, 9, 9, 0.6);
  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.208);
 margin-top:2em;
+
+@media (min-width: 1200px) {
+    position: relative;
+    left: 50px;
+  }
 `
 export const Listagem=styled.ul`
 width: 80%; 

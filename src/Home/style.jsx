@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const HomeSection = styled.section`
   max-width: 1120px;
-  transition: all 0.3s ease;
   margin: 0 auto;
   padding: 25px;
   
@@ -49,7 +48,6 @@ animation: typewriter 2s steps(15) infinite alternate,
 blink 500ms steps(13) infinite normal;
 border-right: 5px solid black;
 margin-left: 35%;
-position: absolute;
 @keyframes typewriter {
 from {
        width: 0%;
