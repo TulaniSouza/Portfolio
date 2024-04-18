@@ -9,7 +9,7 @@ import javascript from '../assets/javascript.png'
 import vscode from '../assets/vscode.png'
 import windows from '../assets/windows.png'
 import styledC from "../assets/styled-components.jpg"
-
+import Cloud from "../assets/cloud.png"
 export default function Home() {
   const home = [
     {
@@ -47,6 +47,10 @@ export default function Home() {
     {
       name: 'git',
       image: git
+    },
+    {
+      name: 'Cloud',
+      image: Cloud
     }
   ]
 

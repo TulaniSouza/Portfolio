@@ -62,11 +62,17 @@ from {
           height: 0%;
         }
         to {
-          border-color: transparent;
-          height: 10%;
+          border-color: transparent; 
+          height: 10%; 
 
         }
         
       }
-   
+@media (max-width:568px){
+  margin-left:15%;
+  font-size: 40px;
+ 
+}
+
+
 `
