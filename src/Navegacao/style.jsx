@@ -49,9 +49,10 @@ li{
 
 }
 @media (max-width: 568px) {
-  width:90%;
+  width:95%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor:pointer;
+
 }
 }
 
@@ -61,12 +62,16 @@ li{
 @media (max-width: 568px) {
     display: flex;
     flex-direction: column;
+    top: 10%;
+    margin-right:69%;
+    height: 32%;
+    width: 30%;
     position: absolute;
-    top: 84px;
-    margin-right:75%;
-    height: 35%;
-    width: 23%;
-  };
 
+  };
+  @media (max-width: 568px) {
+  display: ${(props) => (props.open ? "flex" : "none")}
+
+}
 
 `
