@@ -17,6 +17,12 @@ width: 99vw;
 @media (min-width:350px) and (max-width:481px){
 height: 77.1vh;
 }
+@media (min-width:152px) and (max-width:349px){
+height: 88vh;
+margin:0 auto;
+top:65%;
+font-size: 20px;
+}
 `
 export const Image= styled.img`
 width: 10em;
@@ -37,6 +43,13 @@ height: 32vh;
 width: 8em;
 margin-bottom: 19em;
 }
+@media (min-width:152px) and (max-width:349px){
+margin:0 auto;
+margin-bottom:74%;
+height: 35vh;
+width: 7em;
+}
+
 `
 
 export const Paragrafo= styled.p`
@@ -69,5 +82,13 @@ height: 34%;
 margin-top:12em;
 font-size: 20px;
 margin-right: 10%;
+}
+@media (min-width:152px) and (max-width:349px){
+position:absolute;
+width: 96%;
+height: 34%;
+margin:0 auto;
+top:49%;
+font-size: 20px;
 }
 `

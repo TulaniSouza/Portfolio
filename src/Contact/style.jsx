@@ -10,10 +10,11 @@ margin-left:30%;
  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.208);
 margin-top:2em;
 
-@media (min-width: 1200px) {
-    position: relative;
-    left: 50px;
-  }
+@media (max-width: 568px) {
+margin:0 auto;
+width:60vw; 
+margin-top:1.5rem;
+}
 `
 export const Listagem=styled.ul`
 width: 80%; 
@@ -27,12 +28,17 @@ li{
     width: 30%;
     height: 35%;
     margin-top:15%; 
-
+    @media (max-width: 568px) {
+    margin:0 auto;
+    margin-top: 30%;
+    width: 40%;
+    height: 45%
+}
 }
 `
 
 export const Screen= styled.img`
-width:55%;
+width:75%;
 height: 100%;
 object-fit: contain;
 `

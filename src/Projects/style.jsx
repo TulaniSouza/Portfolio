@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Container= styled. div`
-width: 90vw;
+width: 95vw;
 height: 80vh;
 display:flex;
 flex-wrap:wrap;
 justify-content: space-evenly;
-margin-left:5%;
+margin:0 auto;
 
 
 `
@@ -23,7 +23,12 @@ gap: 3px;
   -webkit-transform: scale(1.2);
    transform: scale(1.2);
 }
-
+@media (max-width:568px) {
+  margin: 0 auto;
+  width: 100%;
+  bottom: 10%;
+  height: auto;
+}
 `
 
 export const Imagem= styled.img`
@@ -39,7 +44,12 @@ gap: 3px;
   -webkit-transform: scale(1.2);
    transform: scale(1.2);
 }
-
+@media (max-width:568px) {
+  margin: 0 auto;
+  width: 100%;
+  bottom: 10%;
+  height: auto;
+}
 `
 
 export const ThereeImagem= styled.img`
@@ -54,6 +64,12 @@ gap: 3px;
 &:hover{
   -webkit-transform: scale(1.2);
    transform: scale(1.2);
+}
+@media (max-width:568px) {
+  margin: 0 auto;
+  width: 100%;
+  bottom: 10%;
+  height: auto;
 }
 `
 
@@ -70,5 +86,10 @@ gap: 3px;
   -webkit-transform: scale(1.2);
    transform: scale(1.2);
 }
-
+@media (max-width:568px) {
+  margin: 0 auto;
+  width: 100%;
+  bottom: 10%;
+  height: auto;
+}
 `
