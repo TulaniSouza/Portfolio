@@ -8,7 +8,7 @@ width: 13%;
 
 @media (max-width: 568px) {
 margin: 0;
-width: 21%;
+width: 25%;
 margin-right:80%;
 cursor:pointer;
 }
