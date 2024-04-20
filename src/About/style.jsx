@@ -17,8 +17,8 @@ width: 99vw;
 @media (min-width:350px) and (max-width:481px){
 height: 77.1vh;
 }
-@media (min-width:152px) and (max-width:349px){
-height: 88vh;
+@media (min-width:162px) and (max-width:349px){
+height: 87vh;
 margin:0 auto;
 top:65%;
 font-size: 20px;
@@ -41,7 +41,8 @@ height: 13em;
 @media (min-width:350px) and (max-width:481px){
 height: 32vh;
 width: 8em;
-margin-bottom: 19em;
+margin-bottom: 23em;
+margin-right:20%;
 }
 @media (min-width:152px) and (max-width:349px){
 margin:0 auto;
@@ -86,7 +87,7 @@ margin-right: 10%;
 @media (min-width:152px) and (max-width:349px){
 position:absolute;
 width: 96%;
-height: 34%;
+height: 41%;
 margin:0 auto;
 top:49%;
 font-size: 20px;

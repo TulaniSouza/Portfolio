@@ -10,8 +10,8 @@ const About = () => {
         <S.Paragrafo> Desenvolvedora Web Front-end, apta a 
             resolver problemas e pensar em alternativas para
             a questão; proativa, dedicada e aluna da turma 
-            Talentos Digitais - Vai na Web- (HTML, CSS, JS, React, Hooks e Cloud AWS).
-            Formanda em Gestão de Tecnologia da Informação (UNESA-RJ), 
+            Talentos Digitais - Vai na Web. Formanda em 
+            Gestão de Tecnologia da Informação (UNESA-RJ), 
             amante da área e, de boas músicas.
         </S.Paragrafo>
     </S.Text>

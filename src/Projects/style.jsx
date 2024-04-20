@@ -79,6 +79,7 @@ height: 45%;
 margin-top:1px;
 gap: 3px;
 
+
 -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 

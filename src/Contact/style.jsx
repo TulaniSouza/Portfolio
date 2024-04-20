@@ -49,7 +49,7 @@ height: 100%;
 object-fit: contain;
 `
 export const Social= styled.img`
-width:55%;
+width:80%;
 height: 100%;
 object-fit: contain;
 

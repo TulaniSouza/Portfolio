@@ -8,11 +8,12 @@ import * as S from "./style.jsx"
 
 
 const Projects = () =>{
+    
    return(
-        <S.Container>
+        <S.Container> 
             <S.Image  src={contador} alt="contador simples"/>
             <S.Imagem  src={loja} alt="loja"/>
-            <S.ThereeImagem  src={fantastika} alt="fantastika"/>
+            <S.ThereeImagem  src={fantastika} alt="fantastika"/>              
             <S.FourImage  src={Port} alt="Portflow"/>
         </S.Container>
     )
