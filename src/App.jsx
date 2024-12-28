@@ -2,7 +2,6 @@ import React from 'react'
 import {createGlobalStyle} from "styled-components"
 import Navegacao from "./Navegacao/Navegacao.jsx"
 
-
 const GlobalStyle = createGlobalStyle`
 *{
   margin:0;
@@ -19,7 +18,6 @@ function App() {
     <>
      <GlobalStyle/>
      <Navegacao/>
-
     </>
   )
 }

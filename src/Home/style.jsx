@@ -69,7 +69,7 @@ from {
         
       }
 @media (max-width:568px){
-  margin-left:15%;
+  margin:0 auto;
   font-size: 40px;
  
 }

@@ -10,6 +10,8 @@ import vscode from '../assets/vscode.png'
 import windows from '../assets/windows.png'
 import styledC from "../assets/styled-components.jpg"
 import Cloud from "../assets/cloud.png"
+import Sass from "../assets/Sass.png"
+
 export default function Home() {
   const home = [
     {
@@ -51,6 +53,10 @@ export default function Home() {
     {
       name: 'Cloud',
       image: Cloud
+    },
+    {
+      name: 'Sass',
+      image: Sass
     }
   ]
 

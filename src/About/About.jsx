@@ -1,20 +1,19 @@
 import React from "react"
 import * as S from "./style.jsx"
-import Tulani from "../assets/Tulani.jpg"
+import Tulani from "../assets/Tulani.png"
 
 
 const About = () => {
-    return(
-    <S.Text>
-        <S.Image src={Tulani} alt="Tulani" title="Tulani"/>
-        <S.Paragrafo> Desenvolvedora Web Front-end, apta a 
-            resolver problemas e pensar em alternativas para
-            a questão; proativa, dedicada e aluna da turma 
-            Talentos Digitais - Vai na Web. Formanda em 
-            Gestão de Tecnologia da Informação (UNESA-RJ), 
-            amante da área e, de boas músicas.
-        </S.Paragrafo>
-    </S.Text>
+    return (
+        <S.Text>
+            <S.Image src={Tulani} alt="Tulani" title="Tulani" />
+            <S.Paragrafo>
+
+                Graduada em Gestão de Tecnologia da Informação pela Universidade Estácio de Sá (UNESA-RJ) e formada em Computação em Nuvem pela Escola da Nuvem.
+
+                Apaixonada pela área de tecnologia e por boas músicas, combina entusiasmo e competência para contribuir de forma significativa em projetos e desafios.
+            </S.Paragrafo>
+        </S.Text>
     )
 }
 export default About
