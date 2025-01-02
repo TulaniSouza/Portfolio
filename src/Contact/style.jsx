@@ -8,7 +8,8 @@ align-items: center;
 margin-left:30%;
  box-shadow: 30px 30px rgba(139, 9, 9, 0.6);
  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.208);
-margin-top:2em;
+margin-top:10%;
+
 
 @media (max-width: 568px) {
 margin:0 auto;

@@ -1,89 +1,124 @@
 import styled from "styled-components";
 
 const breakpoints = {
-  mobileS: '350px',
-  mobileM: '482px',
-  mobileL: '687px',
-  tablet: '703px',
+  mobile: "350px",
+  tablet: "768px",
 };
 
-export const Text = styled.section`
-  display: flex;
+export const Box = styled.section`
+display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  border: solid red;
+  height: 83.2vh;
+`
+export const Imag = styled.section`
+border:solid;
+display: flex;
+justify-content: space-evenly;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    flex-direction: column;
-    height: 73vh;
-  }
-  @media (max-width: ${breakpoints.mobileL}) {
-    height: 77vh;
-    width: 99vw;
-  }
-  @media (max-width: ${breakpoints.mobileM}) {
-    height: 77.1vh;
-  }
-  @media (max-width: ${breakpoints.mobileS}) {
-    height: 87vh;
-    margin: 0 auto;
-    top: 65%;
-    font-size: 20px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 70vw;
+    height: 70vh;
   }
 `;
-
 export const Image = styled.img`
-  width: 25%;
-  height: 35%;
-  border-radius: 45%;
+  width: 25vw;
+  height: 80vh;
+  border-radius: 50%;
+  object-fit: contain;
+  border: solid;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    margin-bottom: 35%;
-    height: 55%;
-    width: 30%;
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 70vw;
+    height: 70vh;
   }
-  @media (max-width: ${breakpoints.mobileL}) {
-    margin-bottom: 12rem;
-    height: 13em;
-  }
-  @media (max-width: ${breakpoints.mobileM}) {
-    height: 48%;
-    width: 50%;
+`;
+export const Text = styled.section`
+display: flex;
+  gap: 20px;
+  /* max-width: 70%; */
+  width: 69%;
+  height: 40%;
+  text-align: center;
+  border: solid blue;
 
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    align-items: center;
   }
-  @media (max-width: ${breakpoints.mobileS}) {
-    margin: 0 auto;
-    margin-bottom: 74%;
-    height: 38vh;
-    width: 34%;
+`;
+export const Paragrafo = styled.p`
+  flex: 1;
+  font-size: 1.2rem;
+  color: #5f2a7d;
+  line-height: 1.3;
+  display:flex;
+  border:solid;
+  padding: 10px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 1rem;
+    margin-bottom: 5px;
   }
 `;
 
-export const Paragrafo = styled.p`
-  font-size: 25px;
-  color: #5f2a7dda;
-  text-align: center;
-  margin-left: 10%;
-  width: 30%;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    position: absolute;
-    width: 75%;
-    margin-top: 25%;
-    font-size: 20px;
+export const Container = styled.section`
+ flex-shrink: 1;
+  width: 39%;
+  /* max-width:100%; */
+  height: 54%;
+  object-fit: cover;
+  display: flex;
+  gap: 5px;
+  margin-left: 25%;
+  border:solid 8px;
+
+
+  .carousel .control-prev.control-arrow,
+  .carousel .control-next.control-arrow {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
   }
-  @media (max-width: ${breakpoints.mobileL}) {
-    position: absolute;
-    width: 96%;
-    margin-top: 40%;
-    font-size: 20px;
-    margin-right: 10%;
+
+  .carousel .control-prev.control-arrow::before,
+  .carousel .control-next.control-arrow::before {
+    font-size: 1rem; 
   }
-  @media (max-width: ${breakpoints.mobileM}) {
-    margin-top: 59%;
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    height: 100%;
   }
-  @media (max-width: ${breakpoints.mobileS}) {
-    margin: 0 auto;
-    top: 50%;
-    font-size: 20px;
+
+`;
+
+
+export const BoxImage = styled.figure`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid orange;
+  height: 75%;
+
+  img {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+    border:solid yellowgreen;
+  
   }
+`;
+
+export const Legend = styled.figcaption`
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+  border: solid pink;
 `;

@@ -1,96 +1,64 @@
 import styled from "styled-components";
 
-export const Container= styled. div`
-width: 95vw;
-height: 80vh;
-display:flex;
-flex-wrap:wrap;
-justify-content: space-evenly;
-margin:0 auto;
-
-
-`
-export const Image= styled.img`
-object-fit: contain;
-height: 45%;
-margin-top:5px;
-gap: 3px;
-
--webkit-transition: -webkit-transform .5s ease;
-   transition: transform .5s ease;
-
-&:hover{
-  -webkit-transform: scale(1.2);
-   transform: scale(1.2);
-}
-@media (max-width:568px) {
-  margin: 0 auto;
+export const Container = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  bottom: 10%;
-  height: auto;
-}
-`
+  height: 79vh;
+  position: relative;
+  border: solid;
 
-export const Imagem= styled.img`
-object-fit: contain;
-height: 45%;
-margin-top:5px;
-gap: 3px;
+  .carousel .slide img {
+    object-fit: contain;
+    height: 70%;
+  }
 
--webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 50px; 
+    z-index: 1;
+  }
 
-&:hover{
-  -webkit-transform: scale(1.2);
-   transform: scale(1.2);
-}
-@media (max-width:568px) {
-  margin: 0 auto;
-  width: 100%;
-  bottom: 10%;
-  height: auto;
-}
-`
+  .carousel .control-dots .dot {
+    background: #888;
+  }
 
-export const ThereeImagem= styled.img`
-object-fit: contain;
-height: 45%;
-margin-top:1px;
-gap: 3px;
+  @media (max-width: 768px) {
+    .carousel .slide img {
+      max-height: 50%;
+    }
 
--webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+    .carousel .control-dots {
+      bottom: 15px;
+    }
+  }
+`;
 
-&:hover{
-  -webkit-transform: scale(1.2);
-   transform: scale(1.2);
-}
-@media (max-width:568px) {
-  margin: 0 auto;
-  width: 100%;
-  bottom: 10%;
-  height: auto;
-}
-`
+export const BoxImage = styled.figure`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
 
-export const FourImage= styled.img`
-object-fit: contain;
-height: 45%;
-margin-top:1px;
-gap: 3px;
+  img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+`;
 
+export const Legend = styled.figcaption`
+  font-size: 1.4em;
+  color: #333;
+  text-align: center;
+  margin-top: 25px; 
+  z-index: 3;
+  position: relative;
 
--webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-
-&:hover{
-  -webkit-transform: scale(1.2);
-   transform: scale(1.2);
-}
-@media (max-width:568px) {
-  margin: 0 auto;
-  width: 100%;
-  bottom: 10%;
-  height: auto;
-}
-`
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+`;

@@ -11,6 +11,7 @@ import windows from '../assets/windows.png'
 import styledC from "../assets/styled-components.jpg"
 import Cloud from "../assets/cloud.png"
 import Sass from "../assets/Sass.png"
+import Python from "../assets/Python.png"
 
 export default function Home() {
   const home = [
@@ -57,6 +58,10 @@ export default function Home() {
     {
       name: 'Sass',
       image: Sass
+    },
+    {
+      name: 'Python',
+      image: Python
     }
   ]
 
