@@ -7,7 +7,6 @@ export const Container = styled.section`
   width: 100%;
   height: 79vh;
   position: relative;
-  border: solid;
 
   .carousel .slide img {
     object-fit: contain;

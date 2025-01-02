@@ -1,117 +1,164 @@
 import styled from "styled-components";
-
-const breakpoints = {
-  mobile: "350px",
-  tablet: "768px",
-};
+import { breakpoint } from "../Mixin/mixin";
 
 export const Box = styled.section`
-display: flex;
-  flex-direction: column;
+  display: flex;
   align-items: center;
-  border: solid red;
-  height: 83.2vh;
-`
-export const Imag = styled.section`
-border:solid;
-display: flex;
-justify-content: space-evenly;
+  justify-content: space-around;
 
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 70vw;
-    height: 70vh;
-  }
-`;
-export const Image = styled.img`
-  width: 25vw;
-  height: 80vh;
-  border-radius: 50%;
-  object-fit: contain;
-  border: solid;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 70vw;
-    height: 70vh;
-  }
-`;
-export const Text = styled.section`
-display: flex;
-  gap: 20px;
-  /* max-width: 70%; */
-  width: 69%;
-  height: 40%;
-  text-align: center;
-  border: solid blue;
-
-  @media (max-width: ${breakpoints.mobile}) {
+  ${breakpoint('small')`
     flex-direction: column;
     align-items: center;
-  }
+    justify-content: center;
+  `}
+
+  ${breakpoint('medium')`
+    flex-direction: column;
+    align-items: center;
+  `}
+
+  ${breakpoint('large')`
+    flex-direction: column;
+    align-items: center;
+  `}
 `;
+
+export const Imag = styled.section`
+  width: 30vw;
+  margin-left: 2rem;
+
+  ${breakpoint('small')`
+    width: 100%;
+    margin-top: 2rem;
+  `}
+
+  ${breakpoint('medium')`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  `}
+
+  ${breakpoint('large')`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  `}
+`;
+
+export const Image = styled.img`
+  width: 20vw;
+  border-radius: 50%;
+
+  ${breakpoint('small')`
+    width: 90%;
+  `}
+
+  ${breakpoint('medium')`
+    width: 70%;
+  `}
+
+  ${breakpoint('large')`
+    width: 60%;
+  `}
+`;
+
+export const Content = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+
+  ${breakpoint('small')`
+    height: 100%;
+    margin: 2rem 0;
+    gap: 1rem;
+  `}
+
+  ${breakpoint('medium')`
+    height: 100%;
+    margin: 2rem 0;
+    gap: 1rem;
+  `}
+
+  ${breakpoint('large')`
+    height: 100%;
+    margin: 2rem 0;
+    gap: 3rem;
+  `}
+`;
+
+export const Text = styled.section`
+  text-align: center;
+  width: 90%;
+
+  ${breakpoint('small')`
+    width: 100%;
+  `}
+`;
+
 export const Paragrafo = styled.p`
   flex: 1;
   font-size: 1.2rem;
   color: #5f2a7d;
   line-height: 1.3;
-  display:flex;
-  border:solid;
+  display: flex;
   padding: 10px;
 
-  @media (max-width: ${breakpoints.mobile}) {
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-`;
+${breakpoint('small')`
+  width: 100%;
+  font-size: 1.2rem;
+`}
 
+${breakpoint('large')`
+  width: 100%;
+  font-size: 1.5rem;
+`}
+`;
 
 export const Container = styled.section`
- flex-shrink: 1;
-  width: 39%;
-  /* max-width:100%; */
-  height: 54%;
-  object-fit: cover;
-  display: flex;
-  gap: 5px;
-  margin-left: 25%;
-  border:solid 8px;
+  width: 20vw;
 
-
-  .carousel .control-prev.control-arrow,
-  .carousel .control-next.control-arrow {
-    width: 30px; 
-    height: 30px; 
-    border-radius: 50%; 
+.carousel .control-prev.control-arrow,
+.carousel .control-next.control-arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5f2a7d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .carousel .control-prev.control-arrow::before,
-  .carousel .control-next.control-arrow::before {
-    font-size: 1rem; 
-  }
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 100%;
-    height: 100%;
+.carousel .control-prev.control-arrow::before,
+.carousel .control-next.control-arrow::before {
+    font-size: 1rem;
   }
 
+  ${breakpoint('small')`
+    width: 90%;
+  `}
+
+  ${breakpoint('medium')`
+    width: 90%;
+  `}
+
+  ${breakpoint('large')`
+    width: 90%;
+  `}
+  ${breakpoint('xlarge')`
+    width: 40%;
+  `}
 `;
 
-
 export const BoxImage = styled.figure`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: solid orange;
-  height: 75%;
-
-  img {
-    width: 100%;
-    max-width: 100vw;
-    height: 100%;
-    display: flex;
-    object-fit: cover;
-    border:solid yellowgreen;
-  
+img {
+    object-fit: contain;
   }
 `;
 
@@ -119,6 +166,5 @@ export const Legend = styled.figcaption`
   font-size: 0.9rem;
   color: #333;
   text-align: center;
-  font-weight: 600;
-  border: solid pink;
+font-weight: 600;
 `;

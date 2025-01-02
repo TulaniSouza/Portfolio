@@ -4,13 +4,7 @@ export const Image = styled.img`
   border-radius: 60%;
   width: 10%;
   cursor: pointer;
-  /* transition: transform 0.3s; */
-  border:solid;
-
-  /* &:hover {
-    transform: scale(1.1);
-  } */
-
+ 
   @media (max-width: 568px) {
     width: 30%;
   }
@@ -21,7 +15,6 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
 `;
 
 export const Lista = styled.ul`

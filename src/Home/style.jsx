@@ -4,7 +4,6 @@ export const HomeSection = styled.section`
   max-width: 1120px;
   margin: 0 auto;
   padding: 25px;
-  border: solid; 
     @media (min-width: 1200px) {
     position: relative;
     left: 50px;

@@ -10,7 +10,6 @@ margin-left:30%;
  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.208);
 margin-top:10%;
 
-
 @media (max-width: 568px) {
 margin:0 auto;
 width:60vw; 
@@ -42,6 +41,7 @@ export const Screen= styled.img`
 width:75%;
 height: 100%;
 object-fit: contain;
+
 `
 
 export const Photo= styled.img`
