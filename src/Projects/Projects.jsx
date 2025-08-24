@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Port from "../assets/portflow.png";
@@ -9,46 +9,77 @@ import fantastika from "../assets/fantastika.png";
 import cafeteria from "../assets/Cafeteria.png";
 import * as S from "./style.jsx";
 
-const Projects = () => {
-    return (
-        <S.Container>
-            <Carousel
-                showArrows={true}
-                autoPlay={true}
-                infiniteLoop={true}
-                interval={3000}
-                showThumbs={false}
-            >
-                <S.BoxImage>
-                    <img src={Port} alt="Livro O Despertar da Senhorita Prim, capa azul florida e uma poltrona na capa" title="Livro O Despertar da Senhorita Prim" />
-                    <S.Legend>Desafio do VnW em 2022- Portflow</S.Legend>
-                </S.BoxImage>
-                <S.BoxImage>
-                    <img src={contador} alt="Livro Comida & Cozinha, capa branca com talheres sendo uma colher com tempero natural" title="Livro Comida & Cozinha" />
-                    <S.Legend>Desafio do VnW em 2022- Contador</S.Legend>
-                </S.BoxImage>
-                <S.BoxImage>
-                    <img src={loja} alt="Livro Python sem mistérios, capa azul e o símbolo da linguagem" title="Livro Python sem mistérios" />
-                    <S.Legend>Desafio VnW em 2023- Loja</S.Legend>
-                </S.BoxImage>
-                <S.BoxImage>
-                    <img src={fantastika} alt="Livro Protagonista, capa avermelhada com o nome na diagonal em letras brancas" title="Livro Protagonista" />
-                    <S.Legend>Desafio VnW em 2023- Fantastika</S.Legend>
-                </S.BoxImage>
-                <S.BoxImage>
-                    <img src={cafeteria} alt="Livro Protagonista, capa avermelhada com o nome na diagonal em letras brancas" title="Livro Protagonista" />
-                    <S.Legend> Treino em 2024-Cafeteria</S.Legend>
-                </S.BoxImage>
-            </Carousel>
-        </S.Container>
-    );
-};
+const projects = [
+  {
+    img: Port,
+    link: "https://tulanisouza.github.io/-PortFlow/",
+    alt: "Site com HTML e CSS",
+    title: "Portflow",
+    legend: "Desafio VnW 2022 - Portflow",
+  },
+  {
+    img: contador,
+    alt: "Projeto contador em JavaScript",
+    title: "Contador",
+    legend: "Desafio VnW 2022 - Contador",
+  },
+  {
+    img: loja,
+    link: "https://tulanisouza.github.io/Loja_de_roupa/",
+    alt: "Loja de roupa com HTML e CSS",
+    title: "Loja de roupa",
+    legend: "Desafio VnW 2023 - Loja",
+  },
+  {
+    img: fantastika,
+    link: "https://tulanisouza.github.io/Fantasika/",
+    alt: "Site sobre cachorros",
+    title: "Fantastika",
+    legend: "Desafio VnW 2023 - Fantastika",
+  },
+  {
+    img: cafeteria,
+    link: "https://cafeteria-orcin.vercel.app/",
+    alt: "Site para cafeteria",
+    title: "Cafeteria",
+    legend: "Treino 2024 - Cafeteria",
+  },
+];
 
-const rootElement = document.querySelector('.Projects');
+const Projects = () => {
+  return (
+    <S.Container>
+      <Carousel
+        className="carousel"
+        showArrows
+        autoPlay
+        infiniteLoop
+        interval={3000}
+        showThumbs={false}
+        showIndicators={false}
+      >
+        {projects.map(({ img, link, alt, title, legend }, index) => (
+          <S.BoxImage key={img}>
+            {link ? (
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <img src={img} alt={alt} title={title} />
+              </a>
+            ) : (
+              <img src={img} alt={alt} title={title} />
+            )}
+            <S.Legend>{legend}</S.Legend>
+          </S.BoxImage>
+        ))}
+      </Carousel>
+    </S.Container>
+  );
+};
+const rootElement = document.querySelector(".Projects");
 if (rootElement) {
-    ReactDOM.render(<Projects />, rootElement);
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<Projects />);
 } else {
-    console.error("Elemento '.Projects' não encontrado no DOM");
+  console.error("Elemento '.Projects' não encontrado no DOM");
 }
 
 export default Projects;

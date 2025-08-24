@@ -6,8 +6,8 @@ import css from '../assets/css.png'
 import git from '../assets/git.png'
 import Github from "../assets/github.png"
 import javascript from '../assets/javascript.png'
-import vscode from '../assets/vscode.png'
-import windows from '../assets/windows.png'
+import MySQL from '../assets/MySQL.png'
+import docker from '../assets/docker.png'
 import styledC from "../assets/styled-components.jpg"
 import Cloud from "../assets/cloud.png"
 import Sass from "../assets/Sass.png"
@@ -40,12 +40,12 @@ export default function Home() {
       image: Github
     },
     {
-      name: 'VS Code',
-      image: vscode
+      name: 'MySQL',
+      image: MySQL
     },
     {
-      name: 'Windows',
-      image: windows
+      name: 'Docker',
+      image: docker
     },
     {
       name: 'git',

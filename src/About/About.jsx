@@ -21,9 +21,9 @@ const About = () => {
             <S.Content>
                 <S.Text>
                     <S.Paragrafo>
-                        Graduada em Gestão de Tecnologia da Informação pela Universidade Estácio de Sá (UNESA-RJ) em junho de 2024, com especialização em Computação em Nuvem pela Escola da Nuvem (outubro de 2024). Completei formações em Desenvolvimento Front-end (outubro de 2022 e junho de 2024) e Desenvolvimento Full Stack (março de 2025) pelo programa Vai na Web, onde adquiri ampla experiência em tecnologias como HTML, CSS, JavaScript, React e APIs RESTful.
+                        Sou graduada em Gestão de Tecnologia da Informação (UNESA-RJ, 2024), com especialização em Computação em Nuvem pela Escola da Nuvem e formações em Desenvolvimento Front-end e Full Stack pelo programa Vai na Web. Tenho experiência em tecnologias como HTML, CSS, JavaScript, React, APIs REST e AWS, além de vivência prática em ambientes Linux, Docker e ferramentas de cibersegurança.
 
-                        Apaixonada por tecnologia e inovação, integro entusiasmo e competência para criar interfaces web interativas, computação em Nuvem e contribuir significativamente em projetos desafiadores.
+Sou movida pela paixão em tecnologia, inovação e segurança digital, unindo criatividade e disciplina para entregar soluções eficientes e confiáveis.
                     </S.Paragrafo>
 
                 </S.Text>

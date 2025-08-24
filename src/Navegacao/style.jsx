@@ -1,13 +1,24 @@
 import styled from "styled-components";
+import { breakpoint } from "../Mixin/mixin";
+
 
 export const Image = styled.img`
   border-radius: 60%;
   width: 10%;
   cursor: pointer;
  
-  @media (max-width: 568px) {
-    width: 30%;
+  ${breakpoint('small')`
+   width: 30%;
+  `
   }
+  ${breakpoint('medium')`
+    width:40%;
+  
+  `}
+  ${breakpoint('large')`
+    width:35%;
+  
+  `}
 `;
 
 export const Nav = styled.nav`
@@ -51,7 +62,7 @@ export const Lista = styled.ul`
       }
   }
 
-  @media (max-width: 568px) {
+  ${breakpoint('small')`
     flex-direction: column;
     position: absolute;
     top: 80px;
@@ -65,5 +76,17 @@ export const Lista = styled.ul`
     li {
       margin: 10px;
     }
+  `}
+   ${breakpoint('medium')`
+      li {
+      font-size: 2.1rem;
+    }
+  `
   }
+  ${breakpoint('large')`
+    li {
+      font-size: 2.1rem;
+    }
+  `}
+  
 `;
